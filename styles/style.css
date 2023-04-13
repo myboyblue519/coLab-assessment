@@ -316,19 +316,6 @@ body {
   width: 90%;
   text-align: center;
 }
-.card__price-box {
-  text-align: center;
-  color: #fff;
-  margin-bottom: 8rem;
-}
-.card__price-only {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-}
-.card__price-value {
-  font-size: 6rem;
-  font-weight: 100;
-}
 
 .row {
   max-width: 114rem;
@@ -368,7 +355,7 @@ body {
 }
 
 header {
-  height: 55vh;
+  height: 40vh;
   background-color: #5a60ea;
   position: relative;
 }
@@ -553,7 +540,8 @@ header a {
 }
 
 section {
-  height: 95vh;
+  height: 90vh;
+  margin: 3rem;
 }
 
 .section-about .avatar__photo {
@@ -666,4 +654,14 @@ section {
   font-size: 1.5rem;
   margin-top: 1rem;
   display: none;
+}
+
+@media (max-width: 1000px) {
+  header {
+    height: 35vh;
+  }
+  .row .col-1-of-3 {
+    width: 65%;
+    margin: 4rem 6rem;
+  }
 }
