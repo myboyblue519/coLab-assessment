@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matthew Van Luxemborg</title>
+  </head>
+  <body>
+    <header id="home">
+      <div class="mobile"><a href="#" onclick="toggleNav();">&#9776;</a></div>
+      <nav class="navBar">
+        <!-- <a href="#" class="toggleButton">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a> -->
+        <ul class="navBarLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#getInTouch">Contact</a></li> -->
+        </ul>
+      </nav>
+      <div class="introduction">
+        <h2>Hello, I'm</h2>
+        <h1>Matthew <span>Van Luxemborg</span></h1>
+        <h2 class="openingStatement">I am a Web Developer</h2>
+        <div class="introButtons"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">About me</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I love to code
+            </h3>
+            <p class="paragraph">
+              Coding is a passion that brings me a sense of satisfaction and
+              accomplishment. Writing code utilises a combination of analytical
+              and creative skills, to solve problems which I find can be a
+              deeply rewarding experience. I find myself spending hours absorbed
+              in a project, constantly tinkering and tweaking until Iachieve the
+              desired outcome. By building a website, I can express myself and
+              bring my ideas to life. And when I see your code in action, it can
+              be incredibly satisfying to know that I've created something that
+              can make a real difference in the world.
+            </p>
+
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              I am continuously seeking to learn more
+            </h3>
+            <p class="paragraph">
+              I have a strong desire to enhance my skill set and I constantly
+              seek opportunities to do so, whether it's by watching online
+              videos or taking lessons from various sources. Programming is a
+              dynamic field that captivates my attention and drives me to seek
+              new challenges. Its ever-evolving nature inspires me to explore
+              new techniques, technologies, and programming languages. I am
+              motivated by the satisfaction of creating something from scratch
+              and the sense of accomplishment that comes with solving complex
+              problems through coding.
+            </p>
+
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="avatar">
+              <img
+                src="Images/MyAvatar.png"
+                alt="Photo 1"
+                class="avatar__photo"
+              />
+              <!-- <img
+                src="img/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/nat-3-large.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-weather">
+        <!-- <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            <source src="img/video.webm" type="video/webm">
+            Your browser us not supported!
+          </video>
+        </div> -->
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Weather forcast using API data</h2>
+        </div>
+
+        <div class="weather">
+          <div class="weather__search">
+            <input
+              type="text"
+              placeholder="enter city name"
+              spellcheck="false"
+            />
+            <button><img src="Images/search.png" /></button>
+          </div>
+          <div class="error">
+            <p>Invalid city name</p>
+          </div>
+          <div class="forcast">
+            <img src="Images/clouds.png" class="forcast-icon" />
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+              <div class="col">
+                <img src="Images/humidity.png" />
+                <div class="">
+                  <p class="humidity">50%</p>
+                  <p>Humidity</p>
+                </div>
+              </div>
+              <div class="col">
+                <img src="Images/wind.png" />
+                <div class="">
+                  <p class="wind">50 km/h</p>
+                  <p>Wind Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-8.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">MAry SMith</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                I had the best weekend ever with my family
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                officia placeat adipisci, porro necessitatibus recusandae
+                delectus hic perspiciatis odio ad officiis saepe tempora
+                voluptas architecto reprehenderit tenetur. Saepe, obcaecati
+                aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                src="img/nat-9.jpg"
+                alt="Person on a tour"
+                class="story__img"
+              />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Wow! My life is completely different now!
+              </h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+                officia placeat adipisci, porro necessitatibus recusandae
+                delectus hic perspiciatis odio ad officiis saepe tempora
+                voluptas architecto reprehenderit tenetur. Saepe, obcaecati
+                aliquid?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-text">Read all Stories &rarr;</a>
+      </div> -->
+      </section>
+      <section class="section-portfolio">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">My Recent Projects</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Under the sea
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>psd conversion</li>
+                    <li>
+                      <a
+                        href="https://phenomenal-heliotrope-afe0ab.netlify.app/"
+                        ><button class="btn btn--green">
+                          view live &rarr;
+                        </button></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/myboyblue519/underTheSea"
+                        ><button class="btn btn--green">
+                          view code &rarr;
+                        </button></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$297</p>
+                  </div>
+                  <a href="" class="btn btn--white">Book now!</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Arora
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>psd conversion</li>
+                    <li>
+                      <a href="https://cosmic-stardust-c6b26e.netlify.app/"
+                        ><button class="btn btn--green">
+                          view live &rarr;
+                        </button></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/myboyblue519/arorajewel"
+                        ><button class="btn btn--green">
+                          view code &rarr;
+                        </button></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$497</p>
+                  </div>
+                  <a href="" class="btn btn--white">Book now!</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Zorka
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>psd conversion</li>
+                    <li>
+                      <a href="https://jocular-dango-0c195b.netlify.app/"
+                        ><button class="btn btn--green">
+                          view live &rarr;
+                        </button></a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://github.com/myboyblue519/Zorka"
+                        ><button class="btn btn--green">
+                          view code &rarr;
+                        </button></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$897</p>
+                  </div>
+                  <a href="" class="btn btn--white">Book now!</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--green">Discover all tours</a>
+        </div> -->
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+
+  <!-- <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">Col 1 of 2</div>
+        <div class="col-1-of-2">Col 1 of 2</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-1-of-3">Col 1 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">Col 1 of 3</div>
+        <div class="col-2-of-3">Col 1 of 3</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-2-of-4">Col 2 of 4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">Col 1 of 4</div>
+        <div class="col-3-of-4">Col 3 of 4</div>
+      </div>
+    </section> -->
+</html>
